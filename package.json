@@ -13,6 +13,7 @@
     "astro": "^4.16.0"
   },
   "devDependencies": {
-    "node-html-parser": "^6.1.13"
+    "node-html-parser": "^6.1.13",
+    "sharp": "^0.35.3"
   }
 }
