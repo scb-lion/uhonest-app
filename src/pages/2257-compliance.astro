@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import head from '../partials/2257-compliance.head.html?raw';
+import content from '../partials/2257-compliance.body.html?raw';
+
+const title = `18 U.S.C. § 2257 Compliance Notice | UHonest`;
+const description = `All models, actors, actresses and other persons that appear in any visual depiction of actual sexually explicit conduct appearing or otherwise contained in`;
+const bodyClass = `page-template-default page page-id-73  wp-embed-responsive oxygen-body`;
+---
+<BaseLayout title={title} description={description} bodyClass={bodyClass}>
+  <Fragment slot="head" set:html={head} />
+  <Header />
+  <Fragment set:html={content} />
+  <Footer />
+</BaseLayout>

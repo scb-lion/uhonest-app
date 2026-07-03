@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import head from '../partials/index.head.html?raw';
+import content from '../partials/index.body.html?raw';
+
+const title = `Try The New App Free - Best Hookup App For 2021 | UHonest`;
+const description = `UHonest is a hookup site that connects people looking for hookups and dating with other people nearby. Sign up for free and get laid tonight.`;
+const bodyClass = `home page-template-default page page-id-13  wp-embed-responsive oxygen-body`;
+---
+<BaseLayout title={title} description={description} bodyClass={bodyClass}>
+  <Fragment slot="head" set:html={head} />
+  <Header />
+  <Fragment set:html={content} />
+  <Footer />
+</BaseLayout>

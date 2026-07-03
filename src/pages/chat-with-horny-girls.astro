@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import head from '../partials/chat-with-horny-girls.head.html?raw';
+import content from '../partials/chat-with-horny-girls.body.html?raw';
+
+const title = `Chat With Horny Girls, Find Local Hookups | UHonest`;
+const description = ``;
+const bodyClass = `page-template-default page page-id-119  wp-embed-responsive oxygen-body`;
+---
+<BaseLayout title={title} description={description} bodyClass={bodyClass}>
+  <Fragment slot="head" set:html={head} />
+  <Header />
+  <Fragment set:html={content} />
+  <Footer />
+</BaseLayout>

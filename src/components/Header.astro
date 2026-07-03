@@ -1,0 +1,7 @@
+---
+// The one global header/nav. Edit ../partials/_header.html to change it
+// everywhere. (Kept as a raw partial because the Oxygen markup contains inline
+// <style>/<script> with { } that would otherwise clash with Astro expressions.)
+import html from '../partials/_header.html?raw';
+---
+<Fragment set:html={html} />

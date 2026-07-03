@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import head from '../partials/terms.head.html?raw';
+import content from '../partials/terms.body.html?raw';
+
+const title = `Terms of Service | UHonest`;
+const description = `These terms and conditions of use (“Terms of Use”) constitute an agreement among you (“you”, “your”, “User”); the operator (the “Operator”) of the website`;
+const bodyClass = `page-template-default page page-id-9  wp-embed-responsive oxygen-body`;
+---
+<BaseLayout title={title} description={description} bodyClass={bodyClass}>
+  <Fragment slot="head" set:html={head} />
+  <Header />
+  <Fragment set:html={content} />
+  <Footer />
+</BaseLayout>
